@@ -1,0 +1,85 @@
+5/20/2025	1:09 AM		ERROR(205): String not found in the language resource files  ; Unable to start. Interlock conditions for Work position are missing!
+5/22/2025	7:49 AM		ERROR(201): Error with CHMB1_DUT_PIN_PARALLELISM_VALVE ; Work position 1 not reachable
+5/22/2025	11:47 PM		ERROR(201): Error with CHMB1_DUT_LOCK_VALVE ; Work position 1 not reachable
+5/23/2025	4:31 AM		ERROR(200): Error with CHMB1_DUT_PIN_PARALLELISM_VALVE ; Home position not reachable
+5/23/2025	4:32 AM		ERROR(200): Error with CHMB1_DUT_PIN_PARALLELISM_VALVE ; Home position not reachable
+5/23/2025	5:14 AM		ERROR(201): Error with CHMB1_TOP_PLATE_AUTO ; Work position 1 not reachable
+5/23/2025	5:17 AM		ERROR(201): Error with CHMB1_TOP_PLATE_AUTO ; Work position 1 not reachable
+5/28/2025	3:58 AM		ERROR(201): Error with CHMB1_DUT_LOCK_VALVE ; Work position 1 not reachable
+5/30/2025	5:06 AM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+6/4/2025	4:53 AM		ERROR(200): Error with CHMB1_DUT_MOC1_VALVE ; Home position not reachable
+6/9/2025	3:33 AM		ERROR(501): Error with CHMB2_DUT2_DMCScanner ; 
+6/9/2025	5:42 AM		
+6/9/2025	5:42 AM		
+6/11/2025	9:50 AM		ERROR(501): Error with CHMB2_DUT2_DMCScanner ; 
+6/11/2025	9:58 AM		
+6/11/2025	10:08 AM		ERROR(501): Error with CHMB2_DUT2_DMCScanner ; 
+6/11/2025	10:20 AM		
+6/11/2025	10:22 AM		ERROR(501): Error with CHMB2_DUT2_DMCScanner ; 
+6/11/2025	11:01 AM		
+7/9/2025	10:27 AM		ERROR(-9998): Error with Parameters.CHMB+_DUT_NFC ; 
+7/9/2025	10:28 AM		ERROR(-9998): Error with CHMB1_DUT_NFC ; 
+7/11/2025	3:56 PM		ERROR(501): Error with CHMB1_DUT2_DMCScanner ; 
+7/14/2025	9:35 AM		ERROR(501): Error with CHMB1_DUT2_DMCScanner ; 
+7/17/2025	12:02 PM		ERROR(501): Error with CHMB1_DUT2_DMCScanner ; 
+7/21/2025	3:38 PM		ERROR(501): Error with CHMB1_DUT2_DMCScanner ; 
+7/23/2025	9:28 AM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+7/25/2025	4:39 PM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+7/28/2025	11:30 AM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+7/28/2025	11:41 AM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+7/31/2025	3:22 PM		ERROR(501): Error with CHMB1_DUT2_DMCScanner ; 
+7/31/2025	3:37 PM		ERROR(501): Error with CHMB1_DUT2_DMCScanner ; 
+7/31/2025	5:08 PM		Emergency stop is active!
+8/1/2025	10:24 AM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+8/1/2025	2:25 PM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+8/1/2025	2:28 PM		ERROR(501): Error with CHMB1_DUT2_DMCScanner ; 
+8/1/2025	2:28 PM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+8/1/2025	2:31 PM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+8/1/2025	2:38 PM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+8/1/2025	4:22 PM		ERROR(201): Error with CHMB1_TOP_PLATE_AUTO ; Work position 1 not reachable
+8/1/2025	5:57 PM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+8/1/2025	6:02 PM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+8/1/2025	6:08 PM		Emergency stop is active!
+8/2/2025	11:09 AM		ERROR(501): Error with CHMB1_DUT2_DMCScanner ; 
+8/2/2025	11:29 AM		ERROR(501): Error with CHMB1_DUT1_DMCScanner ; 
+8/4/2025	12:40 PM		ERROR(-9998): Error with CHMB1_TOP_PLATE_AUTO ; 
+8/4/2025	12:42 PM		ERROR(-9998): Error with CHMB1_DUT_LOCK_VALVE ; 
+8/4/2025	12:43 PM		ERROR(204): Error with CHMB1_DUT_LOCK_VALVE ; Unable to start. Interlock conditions for Home position are missing!
+8/5/2025	5:56 PM		ERROR(-9998): Error with CHMB1_DRAWER_OPENER ; 
+8/5/2025	7:34 PM		Emergency stop is active!
+8/5/2025	7:34 PM		Error in lower level component.
+8/5/2025	7:35 PM		Emergency stop is active!
+8/6/2025	3:09 PM		Emergency stop is active!
+9/4/2025	2:25 PM		ERROR(200): Error with CHMB1_DUT_PIN_PARALLELISM_VALVE ; Home position not reachable
+9/22/2025	2:51 PM		ERROR(-9998): Error with CHMB1_DRAWER_LOCKER ; 
+9/22/2025	3:14 PM		ERROR(-9998): Error with CHMB1_DRAWER_LOCKER ; 
+9/24/2025	11:21 AM		
+9/25/2025	4:29 PM		ERROR(501): Error with CHMB2_DUT2_DMCScanner ; 
+9/25/2025	4:30 PM		
+9/29/2025	1:45 PM		ERROR(-9998): Error with CHMB1_DRAWER_LOCKER ; 
+9/29/2025	1:49 PM		ERROR(-9998): Error with CHMB2_DRAWER_LOCKER ; 
+10/14/2025	3:36 PM		ERROR(Error with Robot placing devices): Error with ROBOT_FAIL
+10/14/2025	3:36 PM		ERROR(Error with Robot placing devices): Error with ROBOT_FAIL
+10/14/2025	3:46 PM		ERROR(Error with Robot placing devices): Error with ROBOT_FAIL
+10/14/2025	3:46 PM		ERROR(Error with Robot placing devices): Error with ROBOT_FAIL
+10/14/2025	4:34 PM		ERROR(Error with Robot placing devices): Error with ROBOT_FAIL
+10/14/2025	4:34 PM		ERROR(Error with Robot placing devices): Error with ROBOT_FAIL
+10/15/2025	1:27 PM		Emergency stop is active!
+10/15/2025	1:27 PM		Emergency stop is active!
+10/15/2025	1:28 PM		Error in lower level component.
+10/15/2025	1:28 PM		Error in lower level component.
+10/15/2025	1:46 PM		Emergency stop is active!
+10/15/2025	1:46 PM		Emergency stop is active!
+10/15/2025	4:36 PM		ERROR(Error with Robot placing devices): Error with ROBOT_FAIL
+10/15/2025	4:36 PM		ERROR(Error with Robot placing devices): Error with ROBOT_FAIL
+10/15/2025	8:27 PM		Emergency stop is active!
+10/15/2025	8:27 PM		Emergency stop is active!
+10/16/2025	10:23 PM		Emergency stop is active!
+10/16/2025	10:23 PM		Emergency stop is active!
+10/16/2025	10:24 PM		Error in lower level component.
+10/17/2025	3:36 PM		Emergency stop is active!
+10/17/2025	3:36 PM		Emergency stop is active!
+10/17/2025	3:36 PM		Error in lower level component.
+10/17/2025	3:36 PM		Error in lower level component.
+10/17/2025	3:47 PM		Emergency stop is active!
+10/17/2025	3:47 PM		Emergency stop is active!

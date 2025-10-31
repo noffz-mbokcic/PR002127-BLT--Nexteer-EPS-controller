@@ -1,0 +1,202 @@
+﻿DATA_BLOCK "Remote"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+NON_RETAIN
+   STRUCT 
+	    System { S7_SetPoint := 'False'} : STRUCT
+			MOSI : STRUCT
+				HomePos1 : Bool;
+				HomePos2 :Bool;
+				LampsCHMB1 : Int;
+				LampsCHMB2 : Int;
+				ProjectLanguage : Int;
+				Spare : Array[0..3] of Int;
+			END_STRUCT;
+	    END_STRUCT;
+        Units : STRUCT
+			cCHMB1_DRAWER_OPENER : STRUCT
+				MOSI : STRUCT   // Ts to PLC
+					cCHMB1_DRAWER_OPENER_Execute : Bool;
+					cCHMB1_DRAWER_OPENER_Reset : Bool;
+					cCHMB1_DRAWER_OPENER_Target : Int;
+				END_STRUCT
+			END_STRUCT
+			cCHMB1_DRAWER_LOCKER : STRUCT
+				MOSI : STRUCT   // Ts to PLC
+					cCHMB1_DRAWER_LOCKER_Execute : Bool;
+					cCHMB1_DRAWER_LOCKER_Reset : Bool;
+					cCHMB1_DRAWER_LOCKER_Target : Int;
+				END_STRUCT
+			END_STRUCT
+			cCHMB1_TOP_PLATE_AUTO : STRUCT
+				MOSI : STRUCT   // Ts to PLC
+					cCHMB1_TOP_PLATE_AUTO_Execute : Bool;
+					cCHMB1_TOP_PLATE_AUTO_Reset : Bool;
+					cCHMB1_TOP_PLATE_AUTO_Target : Int;
+				END_STRUCT
+			END_STRUCT			
+			cCHMB2_DRAWER_OPENER : STRUCT
+				MOSI : STRUCT   // Ts to PLC
+					cCHMB2_DRAWER_OPENER_Execute : Bool;
+					cCHMB2_DRAWER_OPENER_Reset : Bool;
+					cCHMB2_DRAWER_OPENER_Target : Int;
+				END_STRUCT
+			END_STRUCT
+			cCHMB2_DRAWER_LOCKER : STRUCT
+				MOSI : STRUCT   // Ts to PLC
+					cCHMB2_DRAWER_LOCKER_Execute : Bool;
+					cCHMB2_DRAWER_LOCKER_Reset : Bool;
+					cCHMB2_DRAWER_LOCKER_Target : Int;
+				END_STRUCT
+			END_STRUCT
+			cCHMB2_TOP_PLATE_AUTO : STRUCT
+				MOSI : STRUCT   // Ts to PLC
+					cCHMB2_TOP_PLATE_AUTO_Execute : Bool;
+					cCHMB2_TOP_PLATE_AUTO_Reset : Bool;
+					cCHMB2_TOP_PLATE_AUTO_Target : Int;
+				END_STRUCT
+			END_STRUCT
+			SPARE : STRUCT
+				MOSI : STRUCT   // Ts to PLC
+					SPARE_Execute : Bool;
+					SPARE_Reset : Bool;
+					SPARE_Target : Int;
+				END_STRUCT
+			END_STRUCT	
+			SIGNALS_TO_MASTER_PLC : STRUCT
+					SIGNALS_TO_MASTER_PLC_SYSTEM : STRUCT
+						CuOnRequest : Bool;
+						InitOK : Bool;
+						Dummy2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						Dummy15 : Bool;
+					END_STRUCT
+					SIGNALS_TO_MASTER_PLC_CHAMBER1 : STRUCT
+						Ready : Bool;
+						Running : Bool;
+						Error : Bool;
+						Part1_Status : Bool;
+						Part2_Status : Bool;						
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;	
+						Dummy15 : Bool;						
+					END_STRUCT
+					SIGNALS_TO_MASTER_PLC_CHAMBER2 : STRUCT
+						Ready : Bool;
+						Running : Bool;
+						Error : Bool;
+						Part1_Status : Bool;
+						Part2_Status : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;	
+						Dummy15 : Bool;						
+					END_STRUCT										
+				END_STRUCT
+				CHMB1__DUT1_MOTOR : STRUCT
+						Enable : Bool;
+						TargetPosition1 : Bool;
+						TargetPosition2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;	
+						Dummy15 : Bool;						
+					END_STRUCT
+				CHMB1__DUT2_MOTOR : STRUCT
+						Enable : Bool;
+						TargetPosition1 : Bool;
+						TargetPosition2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;	
+						Dummy15 : Bool;						
+					END_STRUCT
+				CHMB2__DUT1_MOTOR : STRUCT
+						Enable : Bool;
+						TargetPosition1 : Bool;
+						TargetPosition2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;	
+						Dummy15 : Bool;						
+					END_STRUCT
+				CHMB2__DUT2_MOTOR : STRUCT
+						Enable : Bool;
+						TargetPosition1 : Bool;
+						TargetPosition2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;	
+						Dummy15 : Bool;						
+					END_STRUCT						
+		END_STRUCT
+	END_STRUCT;
+END_STRUCT;
+
+
+BEGIN
+
+END_DATA_BLOCK
+

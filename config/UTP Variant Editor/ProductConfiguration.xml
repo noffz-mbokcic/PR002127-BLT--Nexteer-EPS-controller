@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ProductConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Product>
+    <Name>ProductName</Name>
+    <VariantIdentifiers>
+      <VariantName>
+        <Name>Variant 1</Name>
+        <Description />
+      </VariantName>
+      <VariantName>
+        <Name>Variant 2</Name>
+        <Description />
+      </VariantName>
+    </VariantIdentifiers>
+    <SequenceFiles>
+      <SequenceFile>
+        <Name>FCT_ProductName.seq</Name>
+        <Path>C:\UTP\source\ProductSequences\FCT_ProductName.seq</Path>
+        <SequenceFileItemType>TestSequence</SequenceFileItemType>
+        <VariantItems>
+          <VariantItem>
+            <Name>Master</Name>
+            <FileGlobalValueItems />
+            <SequenceItems>
+              <SequenceItem>
+                <Name>MainSequence</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Numeric Limit Test 1</Name>
+                        <UniqueId>ID#:hCrvw7fphkC0XZILHKFRBB</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>Low</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>9</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>11</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Comparison Type</Name>
+                              <Value>GELE</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Units</Name>
+                              <Value>mA</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Numeric Format</Name>
+                              <Value />
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Numeric Limit Test 2</Name>
+                        <UniqueId>ID#:wuuNWoDkYk+QXcmdASC9GA</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>Low</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>9</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>11</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Comparison Type</Name>
+                              <Value>GELE</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Units</Name>
+                              <Value>V</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Numeric Format</Name>
+                              <Value />
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Lock</Name>
+                        <UniqueId>ID#:1gZU/OqO8BGJ3syCf5KpWB</UniqueId>
+                        <StepType>NI_Lock</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:1wZU/OqO8BGJ3syCf5KpWB</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Lock</Name>
+                        <UniqueId>ID#:2AZU/OqO8BGJ3syCf5KpWB</UniqueId>
+                        <StepType>NI_Lock</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>String Value Test</Name>
+                        <UniqueId>ID#:deuHj3q7qUa20o0AUgjR6D</UniqueId>
+                        <StepType>StringValueTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>String</Name>
+                              <ValueType>String</ValueType>
+                              <Value>Noffz Technologies</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>String Comparison Type</Name>
+                              <ValueType>String Comparison Type</ValueType>
+                              <Value>IgnoreCase</Value>
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems />
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
+              <SequenceItem>
+                <Name>Pass Fail Test</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems />
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
+              <SequenceItem>
+                <Name>Numeric Limit Test 3</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems />
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
+            </SequenceItems>
+          </VariantItem>
+          <VariantItem>
+            <Name>Variant 1</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+            <Description />
+          </VariantItem>
+          <VariantItem>
+            <Name>Variant 2</Name>
+            <FileGlobalValueItems />
+            <SequenceItems>
+              <SequenceItem>
+                <Name>MainSequence</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Numeric Limit Test 1</Name>
+                        <UniqueId>ID#:hCrvw7fphkC0XZILHKFRBB</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Skip</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Numeric Limit Test 2</Name>
+                        <UniqueId>ID#:wuuNWoDkYk+QXcmdASC9GA</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>Low</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>10.25</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>12.25</Value>
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems />
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
+            </SequenceItems>
+          </VariantItem>
+        </VariantItems>
+      </SequenceFile>
+      <SequenceFile>
+        <Name>FCT_Interface.seq</Name>
+        <Path>C:\UTP\source\InterfaceSequences\FCT_Interface.seq</Path>
+        <SequenceFileItemType>InterfaceSequence</SequenceFileItemType>
+        <VariantItems>
+          <VariantItem>
+            <Name>Master</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+          </VariantItem>
+          <VariantItem>
+            <Name>Variant 1</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+            <Description />
+          </VariantItem>
+          <VariantItem>
+            <Name>Variant 2</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+          </VariantItem>
+        </VariantItems>
+      </SequenceFile>
+      <SequenceFile>
+        <Name>Station_Interface.seq</Name>
+        <Path>C:\UTP\source\InterfaceSequences\Station_Interface.seq</Path>
+        <SequenceFileItemType>InterfaceSequence</SequenceFileItemType>
+        <VariantItems>
+          <VariantItem>
+            <Name>Master</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+          </VariantItem>
+          <VariantItem>
+            <Name>Variant 1</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+            <Description />
+          </VariantItem>
+          <VariantItem>
+            <Name>Variant 2</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+            <Description />
+          </VariantItem>
+        </VariantItems>
+      </SequenceFile>
+      <SequenceFile>
+        <Name>FCT2_Interface.seq</Name>
+        <Path>C:\UTP\source\InterfaceSequences\FCT2_Interface.seq</Path>
+        <SequenceFileItemType>InterfaceSequence</SequenceFileItemType>
+        <VariantItems>
+          <VariantItem>
+            <Name>Master</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+          </VariantItem>
+          <VariantItem>
+            <Name>Variant 1</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+            <Description />
+          </VariantItem>
+          <VariantItem>
+            <Name>Variant 2</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+            <Description />
+          </VariantItem>
+        </VariantItems>
+      </SequenceFile>
+      <SequenceFile>
+        <Name>FCT2_ProductName.seq</Name>
+        <Path>C:\UTP\source\ProductSequences\FCT2_ProductName.seq</Path>
+        <SequenceFileItemType>TestSequence</SequenceFileItemType>
+        <VariantItems>
+          <VariantItem>
+            <Name>Master</Name>
+            <FileGlobalValueItems />
+            <SequenceItems>
+              <SequenceItem>
+                <Name>MainSequence</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Numeric Limit Test 1</Name>
+                        <UniqueId>ID#:hCrvw7fphkC0XZILHKFRBB</UniqueId>
+                        <StepType>NumericLimitTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>Low</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>9</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>High</Name>
+                              <ValueType>Numeric</ValueType>
+                              <Value>11</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Comparison Type</Name>
+                              <Value>GELE</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Units</Name>
+                              <Value>mA</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>Numeric Format</Name>
+                              <Value />
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Lock</Name>
+                        <UniqueId>ID#:htdhw+mO8BGJ3syCf5KpWB</UniqueId>
+                        <StepType>NI_Lock</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Wait</Name>
+                        <UniqueId>ID#:3d5u9emO8BGJ3syCf5KpWB</UniqueId>
+                        <StepType>NI_Wait</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>2</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>Lock</Name>
+                        <UniqueId>ID#:Z8gL6umO8BGJ3syCf5KpWB</UniqueId>
+                        <StepType>NI_Lock</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>3</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>String Value Test</Name>
+                        <UniqueId>ID#:deuHj3q7qUa20o0AUgjR6D</UniqueId>
+                        <StepType>StringValueTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>4</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>String</Name>
+                              <ValueType>String</ValueType>
+                              <Value>Noffz Technologies</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>String Comparison Type</Name>
+                              <ValueType>String Comparison Type</ValueType>
+                              <Value>IgnoreCase</Value>
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>String Value Test</Name>
+                        <UniqueId>ID#:r1KvCOqO8BGJ3syCf5KpWB</UniqueId>
+                        <StepType>StringValueTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>5</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>String</Name>
+                              <ValueType>String</ValueType>
+                              <Value>Noffz Technologies</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>String Comparison Type</Name>
+                              <ValueType>String Comparison Type</ValueType>
+                              <Value>IgnoreCase</Value>
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>String Value Test</Name>
+                        <UniqueId>ID#:sFKvCOqO8BGJ3syCf5KpWB</UniqueId>
+                        <StepType>StringValueTest</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>6</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems>
+                            <LimitValueItem>
+                              <Name>String</Name>
+                              <ValueType>String</ValueType>
+                              <Value>Noffz Technologies</Value>
+                            </LimitValueItem>
+                            <LimitValueItem>
+                              <Name>String Comparison Type</Name>
+                              <ValueType>String Comparison Type</ValueType>
+                              <Value>IgnoreCase</Value>
+                            </LimitValueItem>
+                          </LimitValueItems>
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems />
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
+              <SequenceItem>
+                <Name>Pass Fail Test</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Model.TestSocket.GetTestSocketName</Name>
+                        <UniqueId>ID#:VGmNoCoc/ka0VGu0D+pEeA</UniqueId>
+                        <StepType>NoffzUTP_TEF_Model_TestSocket_GetTestSocketName</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                      <StepItem>
+                        <Name>UI.TestSocket.ShowMessageDialog</Name>
+                        <UniqueId>ID#:sY2S2Fx9dUiD5WMHhOP3BB</UniqueId>
+                        <StepType>NoffzUTP_TEF_UI_TestSocket_ShowMessageDialog</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>1</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems />
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
+              <SequenceItem>
+                <Name>Numeric Limit Test 3</Name>
+                <GroupItems>
+                  <GroupItem>
+                    <Name>Setup</Name>
+                    <StepItems />
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Main</Name>
+                    <StepItems>
+                      <StepItem>
+                        <Name>Statement</Name>
+                        <UniqueId>ID#:dcubQypXeESOwneHXw+V9A</UniqueId>
+                        <StepType>Statement</StepType>
+                        <StepItemGroup>Main</StepItemGroup>
+                        <Index>0</Index>
+                        <RunMode>Normal</RunMode>
+                        <LimitValueItemContainer>
+                          <Name>Limits</Name>
+                          <LimitValueItems />
+                        </LimitValueItemContainer>
+                      </StepItem>
+                    </StepItems>
+                  </GroupItem>
+                  <GroupItem>
+                    <Name>Cleanup</Name>
+                    <StepItems />
+                  </GroupItem>
+                </GroupItems>
+              </SequenceItem>
+            </SequenceItems>
+          </VariantItem>
+          <VariantItem>
+            <Name>Variant 1</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+            <Description />
+          </VariantItem>
+          <VariantItem>
+            <Name>Variant 2</Name>
+            <FileGlobalValueItems />
+            <SequenceItems />
+            <Description />
+          </VariantItem>
+        </VariantItems>
+      </SequenceFile>
+    </SequenceFiles>
+    <Description />
+  </Product>
+  <AppInfo>
+    <Version>2.0.0.676</Version>
+    <LastModification>2018-01-26T17:20:44.6985814+01:00</LastModification>
+  </AppInfo>
+  <AppInfo>
+    <Version>2.0.1.682</Version>
+    <LastModification>2018-03-29T14:51:22.9975882+02:00</LastModification>
+  </AppInfo>
+  <AppInfo>
+    <Version>7.0.0.760</Version>
+    <LastModification>2022-06-03T14:27:31.5819874+02:00</LastModification>
+  </AppInfo>
+  <AppInfo>
+    <Version>7.0.0.761</Version>
+    <LastModification>2022-06-24T12:51:26.5083352+02:00</LastModification>
+  </AppInfo>
+  <AppInfo>
+    <Version>9.2.1.0</Version>
+    <LastModification>2025-09-11T10:44:08.5550438+02:00</LastModification>
+  </AppInfo>
+</ProductConfiguration>

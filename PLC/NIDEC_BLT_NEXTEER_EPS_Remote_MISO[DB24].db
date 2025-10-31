@@ -1,0 +1,688 @@
+﻿DATA_BLOCK "Remote"
+{ S7_Optimized_Access := 'FALSE' }
+VERSION : 0.1
+NON_RETAIN
+   STRUCT 
+	    System { S7_SetPoint := 'False'} : STRUCT
+			MISO { S7_SetPoint := 'False'} : STRUCT
+				SystemInitializing : Bool;
+				SystemHp : Bool;
+				SystemError : Bool;
+				SystemWarning : Bool;
+				CHMB1Hp : Bool;
+				CHMB1Error : Bool;
+				CHMB2Hp : Bool;
+				CHMB2Error : Bool;
+				EmgOk : Bool;
+				PnOk : Bool;
+				SystemMsg : String;
+				OperatingMode : Int;
+				Spare : Array[0..4] of Int;
+			END_STRUCT;
+	    END_STRUCT;
+        Units : STRUCT
+			cCHMB1_DRAWER_OPENER : STRUCT
+				MISO { S7_SetPoint := 'False'} : STRUCT
+					cCHMB1_DRAWER_OPENER_Ready : Bool;
+					cCHMB1_DRAWER_OPENER_Running : Bool;
+					cCHMB1_DRAWER_OPENER_Error : Bool;
+					cCHMB1_DRAWER_OPENER_AtHP : Bool;
+					cCHMB1_DRAWER_OPENER_AtWP1 : Bool;
+					cCHMB1_DRAWER_OPENER_AtWP2 : Bool;
+					cCHMB1_DRAWER_OPENER_AtWP3 : Bool;
+					cCHMB1_DRAWER_OPENER_AtWP4 : Bool;
+					cCHMB1_DRAWER_OPENER_AtWP5 : Bool;
+					cCHMB1_DRAWER_OPENER_ErrorCode : Int;
+					cCHMB1_DRAWER_OPENER_Result : Int;
+					cCHMB1_DRAWER_OPENER_NumberOfWorkPositions : Int;
+				END_STRUCT;
+			END_STRUCT
+			cCHMB1_DRAWER_LOCKER : STRUCT
+				MISO { S7_SetPoint := 'False'} : STRUCT
+					cCHMB1_DRAWER_LOCKER_Ready : Bool;
+					cCHMB1_DRAWER_LOCKER_Running : Bool;
+					cCHMB1_DRAWER_LOCKER_Error : Bool;
+					cCHMB1_DRAWER_LOCKER_AtHP : Bool;
+					cCHMB1_DRAWER_LOCKER_AtWP1 : Bool;
+					cCHMB1_DRAWER_LOCKER_AtWP2 : Bool;
+					cCHMB1_DRAWER_LOCKER_AtWP3 : Bool;
+					cCHMB1_DRAWER_LOCKER_AtWP4 : Bool;
+					cCHMB1_DRAWER_LOCKER_AtWP5 : Bool;
+					cCHMB1_DRAWER_LOCKER_ErrorCode : Int;
+					cCHMB1_DRAWER_LOCKER_Result : Int;
+					cCHMB1_DRAWER_LOCKER_NumberOfWorkPositions : Int;
+				END_STRUCT;
+			END_STRUCT
+			cCHMB1_TOP_PLATE_AUTO : STRUCT
+				MISO { S7_SetPoint := 'False'} : STRUCT
+					cCHMB1_TOP_PLATE_AUTO_Ready : Bool;
+					cCHMB1_TOP_PLATE_AUTO_Running : Bool;
+					cCHMB1_TOP_PLATE_AUTO_Error : Bool;
+					cCHMB1_TOP_PLATE_AUTO_AtHP : Bool;
+					cCHMB1_TOP_PLATE_AUTO_AtWP1 : Bool;
+					cCHMB1_TOP_PLATE_AUTO_AtWP2 : Bool;
+					cCHMB1_TOP_PLATE_AUTO_AtWP3 : Bool;
+					cCHMB1_TOP_PLATE_AUTO_AtWP4 : Bool;
+					cCHMB1_TOP_PLATE_AUTO_AtWP5 : Bool;
+					cCHMB1_TOP_PLATE_AUTO_ErrorCode : Int;
+					cCHMB1_TOP_PLATE_AUTO_Result : Int;
+					cCHMB1_TOP_PLATE_AUTO_NumberOfWorkPositions : Int;
+				END_STRUCT;
+			END_STRUCT					
+			cCHMB2_DRAWER_OPENER : STRUCT
+				MISO { S7_SetPoint := 'False'} : STRUCT
+					cCHMB2_DRAWER_OPENER_Ready : Bool;
+					cCHMB2_DRAWER_OPENER_Running : Bool;
+					cCHMB2_DRAWER_OPENER_Error : Bool;
+					cCHMB2_DRAWER_OPENER_AtHP : Bool;
+					cCHMB2_DRAWER_OPENER_AtWP1 : Bool;
+					cCHMB2_DRAWER_OPENER_AtWP2 : Bool;
+					cCHMB2_DRAWER_OPENER_AtWP3 : Bool;
+					cCHMB2_DRAWER_OPENER_AtWP4 : Bool;
+					cCHMB2_DRAWER_OPENER_AtWP5 : Bool;
+					cCHMB2_DRAWER_OPENER_ErrorCode : Int;
+					cCHMB2_DRAWER_OPENER_Result : Int;
+					cCHMB2_DRAWER_OPENER_NumberOfWorkPositions : Int;
+				END_STRUCT;
+			END_STRUCT
+			cCHMB2_DRAWER_LOCKER : STRUCT
+				MISO { S7_SetPoint := 'False'} : STRUCT
+					cCHMB2_DRAWER_LOCKER_Ready : Bool;
+					cCHMB2_DRAWER_LOCKER_Running : Bool;
+					cCHMB2_DRAWER_LOCKER_Error : Bool;
+					cCHMB2_DRAWER_LOCKER_AtHP : Bool;
+					cCHMB2_DRAWER_LOCKER_AtWP1 : Bool;
+					cCHMB2_DRAWER_LOCKER_AtWP2 : Bool;
+					cCHMB2_DRAWER_LOCKER_AtWP3 : Bool;
+					cCHMB2_DRAWER_LOCKER_AtWP4 : Bool;
+					cCHMB2_DRAWER_LOCKER_AtWP5 : Bool;
+					cCHMB2_DRAWER_LOCKER_ErrorCode : Int;
+					cCHMB2_DRAWER_LOCKER_Result : Int;
+					cCHMB2_DRAWER_LOCKER_NumberOfWorkPositions : Int;
+				END_STRUCT;
+			END_STRUCT
+			cCHMB2_TOP_PLATE_AUTO : STRUCT
+				MISO { S7_SetPoint := 'False'} : STRUCT
+					cCHMB2_TOP_PLATE_AUTO_Ready : Bool;
+					cCHMB2_TOP_PLATE_AUTO_Running : Bool;
+					cCHMB2_TOP_PLATE_AUTO_Error : Bool;
+					cCHMB2_TOP_PLATE_AUTO_AtHP : Bool;
+					cCHMB2_TOP_PLATE_AUTO_AtWP1 : Bool;
+					cCHMB2_TOP_PLATE_AUTO_AtWP2 : Bool;
+					cCHMB2_TOP_PLATE_AUTO_AtWP3 : Bool;
+					cCHMB2_TOP_PLATE_AUTO_AtWP4 : Bool;
+					cCHMB2_TOP_PLATE_AUTO_AtWP5 : Bool;
+					cCHMB2_TOP_PLATE_AUTO_ErrorCode : Int;
+					cCHMB2_TOP_PLATE_AUTO_Result : Int;
+					cCHMB2_TOP_PLATE_AUTO_NumberOfWorkPositions : Int;
+				END_STRUCT;
+			END_STRUCT		
+			SPARE : STRUCT
+				MISO { S7_SetPoint := 'False'} : STRUCT
+					SPARE_Ready : Bool;
+					SPARE_Running : Bool;
+					SPARE_Error : Bool;
+					SPARE_AtHP : Bool;
+					SPARE_AtWP1 : Bool;
+					SPARE_AtWP2 : Bool;
+					SPARE_AtWP3 : Bool;
+					SPARE_AtWP4 : Bool;
+					SPARE_AtWP5 : Bool;
+					SPARE_ErrorCode : Int;
+					SPARE_Result : Int;
+					SPARE_NumberOfWorkPositions : Int;
+				END_STRUCT;
+			END_STRUCT
+		END_STRUCT
+		IOs : STRUCT
+			DI : STRUCT
+				GENERAL : STRUCT
+					EmcyOK : Bool;
+					PnOK : Bool;
+					Dummy1 : Bool;
+					Dummy2 : Bool;
+					Dummy3 : Bool;
+					Dummy4 : Bool;
+					Dummy5 : Bool;
+					Dummy6 : Bool;
+					Dummy7 : Bool;
+					Dummy8 : Bool;
+					Dummy9 : Bool;
+					Dummy10 : Bool;
+					Dummy11 : Bool;
+					Dummy12 : Bool;
+					Dummy13 : Bool;
+					Dummy14 : Bool;
+				END_STRUCT
+				RACK : STRUCT
+					PbsKeyPanel : STRUCT
+						ControUnitOn : Bool;
+						ControlUnitOff : Bool;
+						InterferenceAck : Bool;
+						HomePosCHMB1 : Bool;
+						AutoOn : Bool;
+						AutoOff : Bool;
+						HomePosHMB2 : Bool;
+						ChangeoverOn : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+					END_STRUCT
+				END_STRUCT
+				CHAMBER1 : STRUCT
+					CHAMBER1_DRAWER : STRUCT
+						SafetyOK : Bool;
+						Dummy1 : Bool;
+						Dummy2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						Dummy15 : Bool;
+						CHAMBER1_DRAWER_OPENER : STRUCT
+							HP : Bool;
+							WP : Bool;
+							Dummy1 : Bool;
+							Dummy2 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+						END_STRUCT
+						CHAMBER1_DRAWER_LOCKER : STRUCT
+							HP : Bool;
+							WP : Bool;
+							Dummy1 : Bool;
+							Dummy2 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+						END_STRUCT
+					END_STRUCT
+					CHAMBER1_TOP_PLATE : STRUCT
+						HP : Bool;
+						WP : Bool;
+						Dummy1 : Bool;
+						Dummy2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						CHAMBER1_TOP_PLATE_PBS : STRUCT
+							UP : Bool;
+							DOWN : Bool;
+							Dummy1 : Bool;
+							Dummy2 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+						END_STRUCT
+					END_STRUCT
+					CHAMBER1_DUT_NEST : STRUCT
+						Present : Bool;							
+						Dummy1 : Bool;
+						Dummy2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						Dummy15 : Bool;
+					END_STRUCT					
+					CHAMBER1_CASSETE : STRUCT							
+						Present : Bool;							
+						Dummy1 : Bool;
+						Dummy2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						Dummy15 : Bool;
+					END_STRUCT					
+					CHAMBER1_DUT_NEST1 : STRUCT						
+						CHAMBER1_DUT_NEST1_MOTOR_FOR_MAGNET : STRUCT
+							ReadyRunning : Bool;
+							Dummy1 : Bool;
+							Dummy2 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+							Dummy15 : Bool;
+						END_STRUCT												
+						CHAMBER1_DUT_NEST1 : STRUCT							
+							DutPresentSensor1 : Bool;
+							DutPresentSensor2 : Bool;
+							DutPresentSensor3 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+							Dummy15 : Bool;
+						END_STRUCT
+					END_STRUCT	
+					CHAMBER1_DUT_NEST2 : STRUCT
+						CHAMBER1_DUT_NEST2_MOTOR_FOR_MAGNET : STRUCT
+							ReadyRunning : Bool;
+							Dummy1 : Bool;
+							Dummy2 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+							Dummy15 : Bool;
+						END_STRUCT												
+						CHAMBER1_DUT_NEST2 : STRUCT							
+							DutPresentSensor1 : Bool;
+							DutPresentSensor2 : Bool;
+							DutPresentSensor3 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+							Dummy15 : Bool;
+						END_STRUCT
+					END_STRUCT					
+					CHAMBER1_NOK_PART : STRUCT
+						ButtonPressed : Bool;
+						Dummy1 : Bool;
+						Dummy2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						Dummy15 : Bool;
+					END_STRUCT
+				END_STRUCT
+				CHAMBER2 : STRUCT
+					CHAMBER2_DRAWER : STRUCT
+						SafetyOK : Bool;
+						Dummy1 : Bool;
+						Dummy2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						Dummy15 : Bool;
+						CHAMBER2_DRAWER_OPENER : STRUCT
+							HP : Bool;
+							WP : Bool;
+							Dummy1 : Bool;
+							Dummy2 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+						END_STRUCT
+						CHAMBER2_DRAWER_LOCKER : STRUCT
+							HP : Bool;
+							WP : Bool;
+							Dummy1 : Bool;
+							Dummy2 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+						END_STRUCT
+					END_STRUCT
+					CHAMBER2_TOP_PLATE : STRUCT
+						HP : Bool;
+						WP : Bool;
+						Dummy1 : Bool;
+						Dummy2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						CHAMBER2_TOP_PLATE_PBS : STRUCT
+							UP : Bool;
+							DOWN : Bool;
+							Dummy1 : Bool;
+							Dummy2 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+						END_STRUCT
+					END_STRUCT
+					CHAMBER2_DUT_NEST : STRUCT
+						Present : Bool;							
+						Dummy1 : Bool;
+						Dummy2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						Dummy15 : Bool;
+					END_STRUCT					
+					CHAMBER2_CASSETE : STRUCT							
+						Present : Bool;							
+						Dummy1 : Bool;
+						Dummy2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						Dummy15 : Bool;
+					END_STRUCT					
+					CHAMBER2_DUT_NEST1 : STRUCT						
+						CHAMBER2_DUT_NEST1_MOTOR_FOR_MAGNET : STRUCT
+							ReadyRunning : Bool;
+							Dummy1 : Bool;							
+							Dummy2 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+							Dummy15 : Bool;
+						END_STRUCT												
+						CHAMBER2_DUT_NEST1 : STRUCT							
+							DutPresentSensor1 : Bool;
+							DutPresentSensor2 : Bool;
+							DutPresentSensor3 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+							Dummy15 : Bool;
+						END_STRUCT
+					END_STRUCT	
+					CHAMBER2_DUT_NEST2 : STRUCT
+						CHAMBER2_DUT_NEST2_MOTOR_FOR_MAGNET : STRUCT
+							ReadyRunning : Bool;
+							Dummy1 : Bool;
+							Dummy2 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+							Dummy15 : Bool;
+						END_STRUCT												
+						CHAMBER2_DUT_NEST2 : STRUCT							
+							DutPresentSensor1 : Bool;
+							DutPresentSensor2 : Bool;
+							DutPresentSensor3 : Bool;
+							Dummy3 : Bool;
+							Dummy4 : Bool;
+							Dummy5 : Bool;
+							Dummy6 : Bool;
+							Dummy7 : Bool;
+							Dummy8 : Bool;
+							Dummy9 : Bool;
+							Dummy10 : Bool;
+							Dummy11 : Bool;
+							Dummy12 : Bool;
+							Dummy13 : Bool;
+							Dummy14 : Bool;
+							Dummy15 : Bool;
+						END_STRUCT
+					END_STRUCT				
+					CHAMBER2_NOK_PART : STRUCT
+						ButtonPressed : Bool;
+						Dummy1 : Bool;
+						Dummy2 : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						Dummy15 : Bool;
+					END_STRUCT
+				END_STRUCT
+				SIGNALS_FROM_MASTER_PLC : STRUCT
+					SIGNALS_FROM_MASTER_PLC_SYSTEM : STRUCT
+						CuOn : Bool;
+						CuOff : Bool;
+						GoHomePos : Bool;
+						OpModeCode0 : Bool;
+						OpModeCode1 : Bool;
+						InitOK : Bool;
+						Interlock : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						Dummy15 : Bool;
+					END_STRUCT
+					SIGNALS_FROM_MASTER_PLC_CHAMBER1 : STRUCT
+						Execute : Bool;
+						Reset : Bool;
+						Part1_Placed : Bool;
+						Part2_Placed : Bool;
+						Dummy3 : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;					
+					END_STRUCT
+					SIGNALS_FROM_MASTER_PLC_CHAMBER2 : STRUCT
+						Execute : Bool;
+						Reset : Bool;
+						Part1_Placed : Bool;
+						Part2_Placed : Bool;
+						Dummy4 : Bool;
+						Dummy5 : Bool;
+						Dummy6 : Bool;
+						Dummy7 : Bool;
+						Dummy8 : Bool;
+						Dummy9 : Bool;
+						Dummy10 : Bool;
+						Dummy11 : Bool;
+						Dummy12 : Bool;
+						Dummy13 : Bool;
+						Dummy14 : Bool;
+						Dummy15 : Bool;
+					END_STRUCT										
+				END_STRUCT
+			END_STRUCT;
+			DQ : Struct
+	
+			END_STRUCT;
+		END_STRUCT;
+	END_STRUCT;
+
+
+BEGIN
+
+END_DATA_BLOCK
+

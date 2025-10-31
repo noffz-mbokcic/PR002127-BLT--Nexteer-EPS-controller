@@ -1,0 +1,8 @@
+Error Code,Error Message
+100,Emergency stop active
+200,Home position not reachable
+201,Work position 1 not reachable
+202,Work position 2 not reachable
+203,Target is not specified!
+204,Unable to start. Interlock conditions for Home position are missing!
+205,Unable to start. Interlock conditions for Work position are missing!
